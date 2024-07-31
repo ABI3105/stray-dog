@@ -16,10 +16,27 @@
                 <li><a href="animals.html">🐕 Animals</a></li>
                 <li><a href="donate.html">💁 Donate</a></li>
                 <li><a href="contact.html">📱 Contact</a></li>
+                <li><a href="form.html">🗒️ Form</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Adoption form example -->
+<form id="adoption-form">
+    <label for="animal">Select Animal:</label>
+    <select id="animal" required>
+        <option value="Buddy">Buddy</option>
+        <option value="Whiskers">Whiskers</option>
+        <!-- Add more options -->
+    </select>
+    <label for="adopter-name">Your Name:</label>
+    <input type="text" id="adopter-name" required>
+    <label for="adopter-contact">Contact Information:</label>
+    <input type="text" id="adopter-contact" required>
+    <button type="submit">Apply</button>
+</form>
+<br>
+<br>
         <section>
             <h2>Animals Available for Adoption</h2>
             <div class="animal">

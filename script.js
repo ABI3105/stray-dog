@@ -24,9 +24,7 @@ if (contactForm) {
         contactForm.reset();
     });
 }
-
 ;
-
 
 function navigate(event) {
     event.preventDefault();
@@ -34,3 +32,27 @@ function navigate(event) {
     window.location.href = targetUrl;
 }
 
+// In script.js
+document.getElementById('search-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const query = document.getElementById('search-query').value.toLowerCase();
+    alert(Search functionality is not yet implemented. Searching for: ${query});
+    // Implement search logic here
+}
+);
+document.getElementById('registration-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    alert(Registration not yet implemented. Username: ${username});
+    // Implement registration logic here
+});
+// In script.js
+document.getElementById('adoption-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const animal = document.getElementById('animal').value;
+    const name = document.getElementById('adopter-name').value;
+    const contact = document.getElementById('adopter-contact').value;
+    alert(Adoption application for ${animal} submitted. Name: ${name}, Contact: ${contact});
+    // Implement adoption application logic here
+});
